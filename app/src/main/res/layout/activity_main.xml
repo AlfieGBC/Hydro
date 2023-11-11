@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rootLayout"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Electricity Bill Calculator"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/etMorningUsage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Enter morning usage (kWh)"
+        android:textSize="18sp"
+        />
+
+    <EditText
+        android:id="@+id/etEveningUsage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Enter evening usage (kWh)"
+        android:textSize="18sp"
+        />
+
+    <Switch
+        android:id="@+id/switchRenewable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use Renewable Energy Source"
+        />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULATE"
+        />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        />
+
+    <TextView
+        android:id="@+id/tvReceipt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textAlignment="center"
+        />
+
+</LinearLayout>
